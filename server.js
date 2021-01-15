@@ -14,14 +14,15 @@ app.use(express.json());
 app.use(express.static("public"));
 
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://lohelani:Noelani21@cluster0.qs3sv.mongodb.net/workout?retryWrites=true&w=majority", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
 
 //this is where your routes will be
 
 app.use(require("./routes/view.js"))
 //callapi.js as well
+app.use(require("./routes/api.js"))
 
 app.listen(PORT, () => {
-    console.log(`App running on port ${PORT}!`);
+    console.log(`http://localhost:${PORT}`);
   });
   

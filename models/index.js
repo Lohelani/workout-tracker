@@ -2,8 +2,6 @@
 
 
 module.exports = {
-    //workout schema
-    //collection not table
     Workout: require("./workout")
-    
 } 
+
