@@ -69,13 +69,6 @@ router.get("/api/workouts/range", (req, res) => {
         res.json(err);
     });
 });
-// * View the combined weight of multiple exercises from the past seven workouts on the `stats` page.
-
-// * View the total duration of each workout from the past seven workouts on the `stats` page.
-
-//aggregate function needs to be included here
-
-
 
 
 //end of file
